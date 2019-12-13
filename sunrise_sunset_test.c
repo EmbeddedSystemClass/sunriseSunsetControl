@@ -25,7 +25,7 @@ bool calulateOutputState(uint8_t day, uint8_t month, uint8_t year, uint8_t hours
     UTCsec = time.Sec - UTCsec;
 
     struct SunPhase_s phase;
-    Sun_Phase(Date_DayOfYear(dt.day, dt.month, dt.year), UTCsec / 60, &phase, LONGTITUDE, LONGTITUDE);
+    Sun_Phase(Date_DayOfYear(dt.day, dt.month, dt.year), UTCsec / 60, &phase, LONGTITUDE, LATTITUDE);
 
     if ((tm.minutes + tm.hours * 60) >= phase.sunrise)
         _state = false;
