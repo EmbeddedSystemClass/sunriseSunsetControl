@@ -4,7 +4,7 @@
 #define LATTITUDE   (49*60+16) //49deg16
 #define LONGTITUDE  (16*60+59) //16deg59
 
-bool calulateOutputState(uint8_t day, uint8_t month, uint8_t year, uint8_t hours, uint8_t minutes, uint8_t seconds)
+bool calulateOutputState(uint8_t day, uint8_t month, uint16_t year, uint8_t hours, uint8_t minutes, uint8_t seconds)
 {
     uint8_t dst;
     int16_t UTCsec;
